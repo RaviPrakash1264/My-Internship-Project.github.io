@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 5005;
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser') ;
@@ -223,6 +224,3 @@ app.get('/Kids/Perky-Kids-Bedroom-Design',(request,response)=>{
 
 
 
-app.listen(5005,()=>{
-    console.log('Listening to the server');
-})
