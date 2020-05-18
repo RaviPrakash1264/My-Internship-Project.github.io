@@ -52,11 +52,11 @@ app.get('/add',(request,response)=>{
 app.post('/thanks/add',(request,response)=>{
     console.log('post body',request.body);
     const client = new Client({
-        user: 'postgres',
-        host: 'localhost',
-        database: 'internship',
-        password: '8235983451',
-        port: 5432
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
+      
     });
     client.connect()
     .then(()=>{
