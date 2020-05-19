@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 5005 || 5432;
+const PORT = process.env.PORT || 5005 ;
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser') ;
@@ -74,7 +74,7 @@ app.get('/thanks',(request,response)=>{
     response.render('thanks for booking');
 });
 app.get('/kitchen/Estelle-L-shaped-Kitchen',(request,response)=>{
-    response.render('Estelle L-shape Kitchen');
+    response.render('Estelle L-shaped Kitchen');
 
 });
 app.get('/kitchen/Aspen-L-shaped-Kitchen',(request,response)=>{
