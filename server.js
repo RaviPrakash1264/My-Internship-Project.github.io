@@ -74,7 +74,7 @@ app.get('/thanks',(request,response)=>{
     response.render('thanks for booking');
 });
 app.get('/kitchen/Estelle-L-shaped-Kitchen',(request,response)=>{
-    response.render('Sienna Parallel Modular Kitchen');
+    response.render('Estelle L-shaped kitchen');
 
 });
 app.get('/kitchen/Aspen-L-shaped-Kitchen',(request,response)=>{
